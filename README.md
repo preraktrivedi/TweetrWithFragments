@@ -144,4 +144,4 @@ The following libraries are used to make this possible:
 
 To import the project, make sure you have the following libraries referenced too:
 
-![Screenshots](/sampleapk/settings.png "Screenshot")
+![Screenshots](/sampleapk/settings.PNG "Screenshot")
