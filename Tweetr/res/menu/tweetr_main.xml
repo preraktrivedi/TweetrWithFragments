@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mi_user_profile"
+        android:icon="@drawable/ic_user"
+        android:showAsAction="always"
+        android:title="@string/title_activity_profile"/>
+    
+    <item
+        android:id="@+id/mi_compose_tweet"
+        android:icon="@drawable/ic_compose_tweet"
+        android:showAsAction="always"
+        android:title="@string/compose"/>
+
+</menu>

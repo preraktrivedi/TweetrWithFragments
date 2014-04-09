@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@string/iv_cd_userprofile"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tweet_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivProfile"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/ivProfile" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Sample Twitter Username @usernamesample" />
+
+        <TextView
+            android:id="@+id/tvTimeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvName"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:text="7S"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="7dp"
+            android:autoLink="web"
+            android:text="This is a sample tweet bro" />
+
+        <ImageView
+            android:id="@+id/ivMediaImageThumb"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/tvBody"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_margin="3dp"
+            android:contentDescription="@string/iv_cd_userprofile"
+            android:padding="3dp"
+            android:src="@drawable/ic_launcher"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llActionHandlers"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@id/rl_tweet_details_container"
+        android:layout_below="@id/rl_tweet_details_container"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlReplyUserAction"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivReplyUserAction"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/favourites"
+                android:src="@drawable/ic_reply_action" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFavoriteAction"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivFavoriteAction"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/favourites"
+                android:src="@drawable/ic_favorite_unselected" />
+
+            <TextView
+                android:id="@+id/tvFavoriteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/ivFavoriteAction"
+                android:text="223"
+                android:textColor="#868686"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlRetweetAction"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivRetweetAction"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/favourites"
+                android:src="@drawable/ic_retweet_action" />
+
+            <TextView
+                android:id="@+id/tvRetweetCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/ivRetweetAction"
+                android:text="223"
+                android:textColor="#868686"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

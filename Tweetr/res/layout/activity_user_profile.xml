@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/sv_profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#777777" >
+
+            <ImageView
+                android:id="@+id/iv_profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="@string/name"
+                android:textColor="#070707"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_screen_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/name"
+                android:textColor="#070707"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_profile_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_screen_name"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="This is a sample tag line to be used for user&apos;s current tagline retrieved from user object."
+                android:textColor="#070707"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llCounts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sv_profile_header"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_tweet_count"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_tweet_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="4141"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tweet_count_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tweet_count"
+                android:layout_centerHorizontal="true"
+                android:text="@string/label_tweets"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_profile_follower"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_profile_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="441"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_profile_follower_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_profile_follower"
+                android:layout_centerHorizontal="true"
+                android:text="@string/label_follower"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_profile_following"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_profile_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="123"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_profile_following_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_profile_following"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/label_following"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/llCounts"
+        android:layout_below="@+id/llCounts"
+        tools:layout="@layout/fragment_tweet_list" />
+
+</RelativeLayout>

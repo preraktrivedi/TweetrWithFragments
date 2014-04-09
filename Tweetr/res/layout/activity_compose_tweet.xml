@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_drawable" >
+
+    <LinearLayout
+        android:id="@+id/llActionHandlers"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivGalleryPicker"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:maxHeight="25dp"
+            android:minHeight="25dp"
+            android:src="@drawable/ic_gallery_picker" />
+
+        <ImageView
+            android:id="@+id/ivCameraPicker"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/favourites"
+            android:maxHeight="25dp"
+            android:minHeight="25dp"
+            android:src="@drawable/ic_camera_picker" />
+
+        <ImageView
+            android:id="@+id/ivLocationPicker"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/favourites"
+            android:maxHeight="25dp"
+            android:minHeight="25dp"
+            android:src="@drawable/ic_location_picker" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_username_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/ivProfileCompose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/iv_cd_userprofile"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvUserNameCompose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivProfileCompose"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ivProfileCompose"
+            android:text="First Last"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTweetCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvUserNameCompose"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tvUserNameCompose"
+            android:gravity="right"
+            android:text="140"
+            android:textColor="#9900AB17"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvScreenNameCompose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvUserNameCompose"
+            android:layout_below="@id/tvUserNameCompose"
+            android:layout_marginRight="10dp"
+            android:text="username"
+            android:textColor="#666666"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etTweetMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_username_details"
+        android:layout_margin="15dp"
+        android:hint="@string/whats_happening"
+        android:maxLength="140"
+        android:textColor="#666666"
+        android:textColorHint="#666666"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp" />
+    
+    <ImageView
+            android:id="@+id/ivImageToTweet"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/etTweetMessage"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/iv_cd_userprofile"
+            android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

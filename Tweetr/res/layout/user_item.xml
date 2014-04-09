@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/ivUserProfilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@string/iv_cd_userprofile"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivUserProfilePic"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/ivUserProfilePic" >
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#070707"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:text="Sample Twitter Username" />
+
+        <TextView
+            android:id="@+id/tvUserScreenName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserName"
+            android:layout_alignLeft="@id/tvUserName"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:text="ATsample user"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvUserDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserScreenName"
+            android:layout_alignLeft="@id/tvUserScreenName"
+            android:layout_marginTop="3dp"
+            android:textColor="#676867"
+            android:autoLink="web"
+            android:text="This is a sample tweet bro" />
+    </RelativeLayout>
+
+</RelativeLayout>
