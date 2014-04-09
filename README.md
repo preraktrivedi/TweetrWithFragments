@@ -17,9 +17,16 @@ You can even view your own list or any users' list by clicking on their display 
 * Compose a new tweet by clicking on the compose button in Menu bar.
 * Interactive character counter to make sure you don't exceed your character limit.
 * You can click on the "gallery" or "camera" icon in the compose tweet screen to pick image from gallery or click a new image.
+* The photo that you want to tweet will be added to the view. You can click on it to decide if you want to remove or keep the photo.
 * Click on any tweet to view more details for the same including a larger version of the image.
 * Directly reply to the author of the tweet from the tweet detail page, for your convenience the user screen name is pre-populated.
 * You can use the action panel to perform "Reply", "Favorite", "Retweet" or "Share" actions on the tweet.
+* Click on the user image in Action Bar to check your profile. 
+* Click on any user's profile picture to load their profile.
+* You can check the "Followers" or "Following" list by clicking on the number.
+* Click on app icon or slide right from extreme left to load the Sliding Menu (Navigation Drawer).
+* Navigate to a specific list by clicking on any of the options in the Sliding Menu.
+
 
 Sample APK is included in the sampleapk folder (Tweetr.apk).
 
