@@ -139,3 +139,9 @@ The following libraries are used to make this possible:
  * [PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip) - An interactive indicator to navigate between the different pages of a ViewPager. 
  * [PullToRefresh Listview](https://github.com/erikwt/PullToRefresh-ListView) - A generic, customizable, open source Android ListView implementation that has 'Pull to Refresh' functionality.
  * [Navigation Drawer Design] (https://developer.android.com/design/patterns/navigation-drawer.html) - The navigation drawer is a panel that transitions in from the left edge of the screen and displays the app’s main navigation options.
+ 
+
+
+To import the project, make sure you have the following libraries referenced too:
+
+![Screenshots](/sampleapk/settings.png "Screenshot")
