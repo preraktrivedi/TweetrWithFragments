@@ -31,14 +31,96 @@ Sample APK is included in the sampleapk folder (Tweetr.apk).
 .
 .
 .
-![Screenshots](/sampleapk/01a1.png "Screenshot")
+![Screenshots](/sampleapk/01a2.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/01b.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/01b2.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/01b3.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/01c.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/02a.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/02b.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/03a.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/03b.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/03c.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/03d.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/03e.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/04a.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/04b.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/04c.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/04c1.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/04c2.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/05a.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/05b.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/05c.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/06a.png "Screenshot")
+.
+.
+.
+![Screenshots](/sampleapk/06b.png "Screenshot")
 .
 .
 .
 
-
-
-
+###Special Thanks:
 
 The following libraries are used to make this possible:
 
@@ -47,5 +129,6 @@ The following libraries are used to make this possible:
  * [codepath-oauth](https://github.com/thecodepath/android-oauth-handler) - Custom-built library for managing OAuth authentication and signing of requests
  * [UniversalImageLoader](https://github.com/nostra13/Android-Universal-Image-Loader) - Used for async image loading and caching them in memory and on disk.
  * [ListView Animations](https://github.com/nhaarman/ListViewAnimations) - Easily create ListViews with animations. 
+ * [PagerSlidingTabStrip](https://github.com/astuetz/PagerSlidingTabStrip) - An interactive indicator to navigate between the different pages of a ViewPager. 
  * [PullToRefresh Listview](https://github.com/erikwt/PullToRefresh-ListView) - A generic, customizable, open source Android ListView implementation that has 'Pull to Refresh' functionality.
  * [Navigation Drawer Design] (https://developer.android.com/design/patterns/navigation-drawer.html) - The navigation drawer is a panel that transitions in from the left edge of the screen and displays the app’s main navigation options.
